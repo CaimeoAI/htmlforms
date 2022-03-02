@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>HTML Forms</title>
 </head>
+
 <body>
     <form action="" method="get">
-        <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
-        </div>
-        <div>
-            <label for="lastname">Last Name</label>
-            <input type="text" id="last_name">
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email">
-        </div>
+        <fieldset>
+            <legend>User Info</legend>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" maxlength="10">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="number">Age</label>
+                <input type="number" id="number" min="1" max="200">
+            </div>
+            <div>
+                <label for="date">Date of Birth</label>
+                <input type="date" id="date">
+            </div>
+        </fieldset>
+
+        
+
+        <button type="sumbit">Submit</button>
+        <button type="reset">Clear</button>
+
     </form>
 </body>
+
 </html>
